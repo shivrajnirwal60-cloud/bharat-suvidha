@@ -436,22 +436,23 @@
             doc.text(pan, 140, 30);  // PAN Number Top Right (Blue Bar - Unchanged)
             
             doc.setFontSize(10);
-            doc.text(name, 40, 65);  // Was 58 -> Now 65 (Moved Down)
-            doc.text(fname, 40, 90); // Was 83 -> Now 90 (Moved Down)
-            doc.text(dob, 40, 115);  // Was 108 -> Now 115 (Moved Down)
+            doc.text(name, 50, 75);  // Was 58 -> Now 65 (Moved Down)
+            doc.text(fname, 50, 90); // Was 83 -> Now 90 (Moved Down)
+            doc.text(dob, 50, 105);  // Was 108 -> Now 115 (Moved Down)
 
+            
             // Images Top
             if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 12, 140, 25, 30); // Shifted Photo Down
             if (sig.startsWith('data:')) doc.addImage(sig, 'PNG', 80, 150, 40, 10);     // Shifted Sig Down
 
             // 2. BOTTOM SECTION (Card Cutout) - Fine Tuned
             doc.setFontSize(7);
-            doc.text(name, 25, 232); // Name
-            doc.text(fname, 25, 240); // Father's Name
-            doc.text(dob, 25, 248); // DOB
+            doc.text(name, 25, 255); // Name
+            doc.text(fname, 25, 278); // Father's Name
+            doc.text(dob, 25, 301); // DOB
             
             doc.setFontSize(10);
-            doc.text(pan, 135, 222); // PAN Number (Bold)
+            doc.text(pan, 32, 250); // PAN Number (Bold)
 
             // Images Bottom
             if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 10, 225, 18, 22);
@@ -476,3 +477,4 @@
 </body>
 
 </html>
+
