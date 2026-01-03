@@ -448,11 +448,11 @@
             // 2. BOTTOM SECTION (Card Cutout) - Fine Tuned
             doc.setFontSize(6);
             doc.text(name, 29, 262); // Name
-            doc.text(fname, 29, 267); // Father's Name
-            doc.text(dob, 29, 273); // DOB
+            doc.text(fname, 29, 268); // Father's Name
+            doc.text(dob, 29, 275); // DOB
             
             doc.setFontSize(8);
-            doc.text(pan, 39, 250); // PAN Number (Bold)
+            doc.text(pan, 45, 250); // PAN Number (Bold)
 
             // Images Bottom
             if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 10, 225, 18, 22);
@@ -477,6 +477,7 @@
 </body>
 
 </html>
+
 
 
 
