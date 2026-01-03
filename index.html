@@ -436,9 +436,9 @@
             doc.text(pan, 140, 30);  // PAN Number Top Right (Blue Bar - Unchanged)
             
             doc.setFontSize(10);
-            doc.text(name, 60, 75);  // Was 58 -> Now 65 (Moved Down)
-            doc.text(fname, 60, 90); // Was 83 -> Now 90 (Moved Down)
-            doc.text(dob, 60, 105);  // Was 108 -> Now 115 (Moved Down)
+            doc.text(name, 65, 75);  // Was 58 -> Now 65 (Moved Down)
+            doc.text(fname, 65, 90); // Was 83 -> Now 90 (Moved Down)
+            doc.text(dob, 65, 105);  // Was 108 -> Now 115 (Moved Down)
 
             
             // Images Top
@@ -449,10 +449,10 @@
             doc.setFontSize(6);
             doc.text(name, 29, 262); // Name
             doc.text(fname, 29, 268); // Father's Name
-            doc.text(dob, 29, 275); // DOB
+            doc.text(dob, 29, 276); // DOB
             
             doc.setFontSize(8);
-            doc.text(pan, 45, 250); // PAN Number (Bold)
+            doc.text(pan, 49, 250); // PAN Number (Bold)
 
             // Images Bottom
             if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 10, 225, 18, 22);
@@ -477,6 +477,7 @@
 </body>
 
 </html>
+
 
 
 
