@@ -651,10 +651,10 @@
             doc.text(fname, 29, 268); 
             doc.text(dob, 29, 277); 
             doc.setFontSize(8);
-            doc.text(pan, 52, 250);
+            doc.text(pan, 52, 252);
             
-            if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 20, 292, 12, 12);
-            if (sig.startsWith('data:')) doc.addImage(sig, 'PNG', 57, 292, 20, 5);
+            if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 20, 235, 12, 12);
+            if (sig.startsWith('data:')) doc.addImage(sig, 'PNG', 56, 272, 20, 5);
 
             doc.save(name + "_PAN.pdf");
         }
@@ -674,3 +674,4 @@
     </script>
 </body>
 </html>
+
