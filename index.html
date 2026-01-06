@@ -651,9 +651,9 @@
             doc.text(fname, 29, 268); 
             doc.text(dob, 29, 277); 
             doc.setFontSize(8);
-            doc.text(pan, 52, 252);
+            doc.text(pan, 51, 252);
             
-            if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 33, 245, 12, 13);
+            if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 31, 244, 12, 13);
             if (sig.startsWith('data:')) doc.addImage(sig, 'PNG', 56, 272, 20, 5);
 
             doc.save(name + "_PAN.pdf");
@@ -674,6 +674,7 @@
     </script>
 </body>
 </html>
+
 
 
 
