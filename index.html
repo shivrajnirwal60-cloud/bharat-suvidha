@@ -643,15 +643,15 @@
             doc.text(fname, 65, 90); 
             doc.text(dob, 65, 105); 
 
-            if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 12, 140, 25, 30);
-            if (sig.startsWith('data:')) doc.addImage(sig, 'PNG', 80, 150, 40, 10);
+            if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 20, 139, 25, 30);
+            if (sig.startsWith('data:')) doc.addImage(sig, 'PNG', 70, 140, 40, 10);
 
             doc.setFontSize(6);
             doc.text(name, 29, 262); 
             doc.text(fname, 29, 268); 
             doc.text(dob, 29, 277); 
             doc.setFontSize(8);
-            doc.text(pan, 51, 252);
+            doc.text(pan, 51, 251);
             
             if (photo.startsWith('data:')) doc.addImage(photo, 'JPEG', 30, 244, 12, 13);
             if (sig.startsWith('data:')) doc.addImage(sig, 'PNG', 56, 272, 20, 5);
@@ -674,6 +674,7 @@
     </script>
 </body>
 </html>
+
 
 
 
